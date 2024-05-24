@@ -13,7 +13,6 @@ function generatePoem(event) {
   event.preventDefault();
 
   let poetryPrompt = document.querySelector("#poetryPrompt");
-
   let key = `o3bfb209f55e8951210f40e6476fat3f`;
   let prompt = `User instructions: Generate a brazilian cordel poem without a title in portuguese about ${poetryPrompt.value}`;
   let context = `You are a brazilian north-eastern cordel poet. Generate a four line cordel poem in basic html. Do not include a title. Make sure to follow the user instructions.`;
@@ -22,7 +21,7 @@ function generatePoem(event) {
   axios.get(apiUrl).then(displayPoetry);
 
   new Typewriter("#writtenPoem", {
-    strings: "Generating your poem...",
+    strings: `Gerando poesia sobre ${poetryPrompt.value}...`,
     autoStart: true,
     delay: 50,
     cursor: null,
