@@ -5,12 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cordel generator</title>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1>Cordel poem generator</h1>
-    <br />
-    <button>Generate a poem</button>
-    <br />
+    <header>
+      <h1>AI Cordel poem generator</h1>
+    </header>
+
+    <main>
+      <form>
+        <input
+          type="text"
+          placeholder="Enter the topic of the poem"
+          autofocus
+          required
+          autocomplete="off"
+        />
+        <input type="submit" />
+      </form>
+      <div class="writtenPoem">
+        The poem will be here
+        <br />
+        In this format
+      </div>
+    </main>
     <footer>
       This was coded by
       <a
@@ -24,5 +42,6 @@
       and hosted on
       <a href="https://corel-poetry-generator.netlify.app/">Netfly</a>
     </footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
