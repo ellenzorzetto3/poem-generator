@@ -1,0 +1,80 @@
+body {
+  background-image: url("cordel.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  margin: 200px auto;
+  max-width: 600px;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  font-size: 65px;
+  margin-top: -50px;
+}
+
+main {
+  padding: 30px;
+  background-color: white;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+form {
+  margin-bottom: 30px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.poetryPrompt {
+  padding: 16px;
+  border: 1px solid black;
+  width: 80%;
+  font-size: 16px;
+  border-radius: 5px;
+  line-height: 20px;
+  color: black;
+}
+
+.submitButton {
+  margin-left: 10px;
+  background: black;
+  color: white;
+  border: none;
+  width: 100px;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 14px 24px;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+}
+
+.writtenPoem {
+  font-size: 16px;
+  background-image: url("cordel2.png");
+  padding: 20px;
+  line-height: 2;
+  border-left: 3px solid black;
+  box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  margin-top: -15px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
